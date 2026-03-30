@@ -12,8 +12,17 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .logo {
+            width: 70%;
+        }
+
         #nav {
-            height: 80px;
+            height: 60px;
+        }
+
+        .theame {
+            background-color: black;
+            padding: 5px;
         }
 
         .single-testimonial-slider {
@@ -65,7 +74,7 @@
             color: orange;
         }
 
-        @media only screen and (min-width: 992px) {
+        @media only screen and (min-width: 1200px) {
             .content {
                 padding-top: 60px;
                 padding-left: 90px;
@@ -78,6 +87,14 @@
 
             .content p {
                 font-size: 20px;
+            }
+
+            .title {
+                font-size: 80px;
+            }
+
+            .theame {
+                background-color: transparent;
             }
         }
 
@@ -106,11 +123,9 @@
             .title {
                 font-size: 50px;
             }
-        }
 
-        @media only screen and (min-width: 1200px) {
-            .title {
-                font-size: 80px;
+            .logo {
+                width: 20%;
             }
         }
     </style>
@@ -119,30 +134,31 @@
 <body>
 
     <section class="container-fluid p-0" id="mainwrapper">
-        <section class="container-fluid fixed-top bg-dark" id="header">
+        <section class="container-fluid fixed-top sticky-wrapper is-sticky" id="header">
             <section class="container">
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-lg navbar-dark " id="nav">
                             <div class="container-fluid">
-                                <a class="navbar-brand w-25 rounded" href="index.html">
-                                    <img src="logo.png" alt="" style="width: 75%;">
+                                <a class="navbar-brand logo" href="index.html">
+                                    <img src="logo.png" class="rounded" style="width: 75%; background-color: gray;">
                                 </a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    style="background-color: chocolate;" data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav m-auto gap-lg-4 mb-2 mb-lg-0 bg-dark">
-                                        <li class="nav-item bg-dark">
+                                    <ul class="navbar-nav m-auto gap-lg-4 mb-2 mb-lg-0 ">
+                                        <li class="nav-item theame">
                                             <a class="nav-link active text-light" aria-current="page"
                                                 href="index.html">Home</a>
                                         </li>
-                                        <li class="nav-item bg-dark">
+                                        <li class="nav-item theame">
                                             <a class="nav-link text-light" href="about.html">About</a>
                                         </li>
-                                        <li class="nav-item dropdown bg-dark">
+                                        <li class="nav-item dropdown theame">
                                             <a class="nav-link text-light dropdown-toggle" href="index.html"
                                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Pages
@@ -157,15 +173,15 @@
                                                 <li><a class="dropdown-item" href="shop.html">Shop</a></li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item bg-dark">
+                                        <li class="nav-item theame">
                                             <a class="nav-link text-light" href="news.html">News</a>
                                         </li>
-                                        <li class="nav-item bg-dark">
+                                        <li class="nav-item theame">
                                             <a class="nav-link text-light" href="contact.html">Contact</a>
                                         </li>
-                                        <li class="nav-item dropdown bg-dark">
-                                            <a class="nav-link text-light dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                        <li class="nav-item dropdown theame ">
+                                            <a class="nav-link text-light dropdown-toggle" href="shop.html"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Shop
                                             </a>
                                             <ul class="dropdown-menu">
@@ -178,12 +194,12 @@
                                     </ul>
                                     <div #header-icon>
                                         <ul class="navbar-nav m-auto gap-lg-4 mb-2 mb-lg-0">
-                                            <li class="bg-dark">
+                                            <li class="theame">
                                                 <a class="shopping-cart" href="cart.html">
                                                     <i class="fas fa-shopping-cart text-light"></i>
                                                 </a>
                                             </li>
-                                            <li class="bg-dark">
+                                            <li class="theame">
                                                 <a class="mobile-hide search-bar-icon" href="search.html">
                                                     <i class="fas fa-search text-light"></i>
                                                 </a>
@@ -200,15 +216,15 @@
 
         <section class="container-fluid p-0" id="hero">
             <div class="data col-12">
-                <div id="carouselExampleCaptions" class="carousel slide">
+                <div id="carouselExampleCaptions" class="carousel slide vh-100" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active position-relative">
-                            <img src="hero-bg.jpg" class="d-block img-fluid" alt="">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50">
+                        <div class="carousel-item active position-relative" style="height: 100vh;">
+                            <img src="hero-bg.jpg" class="d-block img-fluid h-100 w-100 object-fit-cover" alt="">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75">
                             </div>
                             <div class="carousel-caption text-start
                             d-flex flex-column justify-content-center align-items-center  
-                             h-100 w-50">
+                             h-50 h-lg-100 main-title">
                                 <h5 class="fw-bold 
                                fs-6 fs-md-5 fs-lg-4" style="color: orange;">
                                     FRESH & ORGANIC
@@ -222,13 +238,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item position-relative">
-                            <img src="hero-bg-2.jpg" class="d-block w-100" alt="">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50">
+                        <div class="carousel-item position-relative" style="height: 100vh;">
+                            <img src="hero-bg-2.jpg" class="d-block h-100 w-100 object-fit-cover" alt="">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75">
                             </div>
                             <div class="carousel-caption 
                             d-flex flex-column justify-content-center align-items-center 
-                            text-center h-100">
+                             h-50 h-lg-100 main-title1">
                                 <h5 class="fw-bold fs-6 fs-md-5 fs-lg-4" style="color: orange;">
                                     FRESH EVERYDAY
                                 </h5>
@@ -241,13 +257,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item position-relative">
-                            <img src="hero-bg-3.jpg" class="d-block w-100" alt="">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50">
+                        <div class="carousel-item position-relative" style="height: 100vh;">
+                            <img src="hero-bg-3.jpg" class="d-block h-100 w-100 object-fit-cover" alt="">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75">
                             </div>
                             <div class="carousel-caption 
                             d-flex flex-column justify-content-center align-items-center 
-                            text-end h-100">
+                            text-end h-50 h-lg-100 main-title2">
                                 <h5 class="fw-bold fs-6 fs-md-5 fs-lg-4" style="color: orange;">
                                     DECEMBER OFFER
                                 </h5>
@@ -326,7 +342,8 @@
                                 <h5 class="card-title">Strawberry</h5>
                                 <p class="card-text">Per Kg</p>
                                 <h3>85$</h3>
-                                <a href="#" class="btn border" style="background-color: aqua;"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+                                <a href="#" class="btn border" style="background-color: aqua;"><i
+                                        class="fas fa-shopping-cart"></i>Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -337,7 +354,8 @@
                                 <h5 class="card-title">Berry</h5>
                                 <p class="card-text">Per Kg</p>
                                 <h3>70$</h3>
-                                <a href="#" class="btn border" style="background-color: aqua;"><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+                                <a href="#" class="btn border" style="background-color: aqua;"><i
+                                        class="fas fa-shopping-cart"></i>Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -372,19 +390,23 @@
                                 sit voluptatem accusant</p>
                         </div>
                         <div class="row col-12">
-                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5" style="color: orange;">
+                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5"
+                                style="color: orange;">
                                 <h3 class="fw-bolder">00</h3>
                                 <p class="fw-bolder">Days</p>
                             </div>
-                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5" style="color: orange;">
+                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5"
+                                style="color: orange;">
                                 <h3 class="fw-bolder">00</h3>
                                 <p class="fw-bolder">Hours</p>
                             </div>
-                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5" style="color: orange;">
+                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5"
+                                style="color: orange;">
                                 <h3 class="fw-bolder">00</h3>
                                 <p class="fw-bolder">Mins</p>
                             </div>
-                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5" style="color: orange;">
+                            <div class="text-center col-3 col-md  m-1 border border-warning pt-md-3 pt-lg-5"
+                                style="color: orange;">
                                 <h3 class="fw-bolder">00</h3>
                                 <p class="fw-bolder">Secs</p>
                             </div>
@@ -398,37 +420,31 @@
         </section> <!-- End of Deal -->
 
         <section class="container-fluid" id="comments">
-            <section class="container">
+            <!-- <section class="container"> -->
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-                <div class="swiper text-center border border-danger m-5">
+                <div class="swiper text-center m-5">
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide single-testimonial-slider">
                             <img src="avatar1.png" alt="">
                             <h4>Saira Hakim</h4>
                             <p>Local Shop Owner</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint
-                                soluta laboriosam non saepe commodi voluptatem illo consequuntur cum maiores magnam
-                                provident, veritatis optio. Distinctio blanditiis est dicta omnis!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint!</p>
                         </div>
 
                         <div class="swiper-slide single-testimonial-slider">
                             <img src="avatar2.png" alt="">
                             <h4>Saira Hakim</h4>
                             <p>Local Shop Owner</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint
-                                soluta laboriosam non saepe commodi voluptatem illo consequuntur cum maiores magnam
-                                provident, veritatis optio. Distinctio blanditiis est dicta omnis!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint!</p>
                         </div>
 
                         <div class="swiper-slide single-testimonial-slider">
                             <img src="avatar3.png" alt="">
                             <h4>Saira Hakim</h4>
                             <p>Local Shop Owner</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint
-                                soluta laboriosam non saepe commodi voluptatem illo consequuntur cum maiores magnam
-                                provident, veritatis optio. Distinctio blanditiis est dicta omnis!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint!</p>
                         </div>
 
                     </div>
@@ -443,7 +459,7 @@
                         }
                     });
                 </script>
-            </section>
+            <!-- </section> -->
         </section> <!-- End of comments -->
 
         <section class="container-fluid p-0" id="year">
