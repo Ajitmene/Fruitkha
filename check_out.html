@@ -15,12 +15,15 @@
         #header {
             background-color: #051922;
         }
-        #hero{
+
+        #hero {
             height: 500px;
         }
-        #content{
+
+        #content {
             padding-top: 230px;
         }
+
         #nav {
             height: 80px;
         }
@@ -255,7 +258,8 @@
                         <br>
                         <p class="d-inline-flex">
                             <button class="btn p-3" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample">
                                 Shipping Address
                             </button>
                         </p>
@@ -267,7 +271,8 @@
                         <br>
                         <p class="d-inline-flex">
                             <button class="btn p-3" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample">
                                 Card Details
                             </button>
                         </p>
@@ -409,7 +414,24 @@
                 </div>
             </section>
         </section> <!-- End of footer -->
+        <button id="topBtn" class="btn btn-warning position-fixed bottom-0 end-0 m-5 p-3 fs-1 d-none">
+            ↑
+        </button>
+        <script>
+            let btn = document.getElementById("topBtn");
 
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    btn.classList.remove("d-none");
+                } else {
+                    btn.classList.add("d-none");
+                }
+            });
+
+            btn.onclick = function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+        </script>
     </section> <!-- End of mainwrapper -->
     <script>
         new Swiper('.swiper', {

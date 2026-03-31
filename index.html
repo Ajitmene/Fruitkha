@@ -12,8 +12,8 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .logo {
-            width: 60%;
+        .card1:hover {
+            transform: scale(1.05);
         }
 
         #nav {
@@ -31,6 +31,8 @@
             background: #f8f9fa;
             border-radius: 10px;
         }
+
+
 
         #comments img {
             border-radius: 100%;
@@ -134,14 +136,14 @@
 <body>
 
     <section class="container-fluid p-0" id="mainwrapper">
-        <section class="container-fluid fixed-top sticky-wrapper is-sticky" id="header">
+        <section class="container-fluid fixed-top" id="header">
             <section class="container">
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-lg navbar-dark " id="nav">
                             <div class="container-fluid">
-                                <a class="navbar-brand logo" href="index.html">
-                                    <img src="logo.png" class="rounded" style="width: 75%; background-color: gray;">
+                                <a class="navbar-brand logo w-50" href="index.html">
+                                    <img src="logo.png" class="rounded w-50 img-fluid">
                                 </a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     style="background-color: chocolate;" data-bs-target="#navbarSupportedContent"
@@ -222,16 +224,10 @@
                             <img src="hero-bg.jpg" class="d-block img-fluid h-100 w-100 object-fit-cover" alt="">
                             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75">
                             </div>
-                            <div class="carousel-caption text-start
-                            d-flex flex-column justify-content-center align-items-center  
-                             h-50 h-lg-100 main-title">
-                                <h5 class="fw-bold 
-                               fs-6 fs-md-5 fs-lg-4" style="color: orange;">
-                                    FRESH & ORGANIC
-                                </h5>
-                                <p class="text-light title fw-bolder">
-                                    Delicious Seasonal Fruits
-                                </p>
+                            <div
+                                class="carousel-caption text-start d-flex flex-column justify-content-center align-items-center h-50 h-lg-100 main-title">
+                                <h5 class="fw-bold fs-6 fs-md-5 fs-lg-4" style="color: orange;">FRESH & ORGANIC</h5>
+                                <p class="text-light title fw-bolder">Delicious Seasonal Fruits</p>
                                 <div class="d-flex gap-2 flex-wrap justify-content-center">
                                     <button class="btn btn-warning btn-sm">Fruits</button>
                                     <button class="btn btn-warning btn-sm">Contact</button>
@@ -242,13 +238,12 @@
                             <img src="hero-bg-2.jpg" class="d-block h-100 w-100 object-fit-cover" alt="">
                             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75">
                             </div>
-                            <div class="carousel-caption 
-                            d-flex flex-column justify-content-center align-items-center 
-                             h-50 h-lg-100 main-title1">
+                            <div
+                                class="carousel-caption d-flex flex-column justify-content-center align-items-center h-50 h-lg-100 main-title1">
                                 <h5 class="fw-bold fs-6 fs-md-5 fs-lg-4" style="color: orange;">
                                     FRESH EVERYDAY
                                 </h5>
-                                <p class="text-light fw-bolder title ">
+                                <p class="text-light title fw-bolder">
                                     100% Organic Collection
                                 </p>
                                 <div class="d-flex gap-2 flex-wrap justify-content-center">
@@ -261,9 +256,8 @@
                             <img src="hero-bg-3.jpg" class="d-block h-100 w-100 object-fit-cover" alt="">
                             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75">
                             </div>
-                            <div class="carousel-caption 
-                            d-flex flex-column justify-content-center align-items-center 
-                            text-end h-50 h-lg-100 main-title2">
+                            <div
+                                class="carousel-caption d-flex flex-column justify-content-center align-items-center text-end h-50 h-lg-100 main-title2">
                                 <h5 class="fw-bold fs-6 fs-md-5 fs-lg-4" style="color: orange;">
                                     DECEMBER OFFER
                                 </h5>
@@ -292,10 +286,10 @@
                 <div class="row py-5 text-center">
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="row">
-                            <div class="col-5 ">
+                            <div class="col-5">
                                 <p><i class="fas fa-truck fs-2 pt-3"></i></p>
                             </div>
-                            <div class="col-7 lh-1 ">
+                            <div class="col-7 lh-1">
                                 <p>Free Shipping</p>
                                 <p>When order over $75</p>
                             </div>
@@ -303,10 +297,10 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="row">
-                            <div class="col-4 ">
+                            <div class="col-4">
                                 <p><i class="fas fa-phone-volume fs-2 pt-3"></i></p>
                             </div>
-                            <div class="col-8 lh-1 ">
+                            <div class="col-8 lh-1">
                                 <p>24/7 Support</p>
                                 <p> Get support all day</p>
                             </div>
@@ -337,7 +331,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                         <div class="card">
-                            <img src="product-img-1.jpg" class="card-img-top" alt="...">
+                            <img src="product-img-1.jpg" class="card-img-top card1" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Strawberry</h5>
                                 <p class="card-text">Per Kg</p>
@@ -349,7 +343,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                         <div class="card">
-                            <img src="product-img-2.jpg" class="card-img-top" alt="...">
+                            <img src="product-img-2.jpg" class="card-img-top card1" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Berry</h5>
                                 <p class="card-text">Per Kg</p>
@@ -361,7 +355,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                         <div class="card">
-                            <img src="product-img-3.jpg" class="card-img-top" alt="...">
+                            <img src="product-img-3.jpg" class="card-img-top card1" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Lemon</h5>
                                 <p class="card-text">Per Kg</p>
@@ -419,48 +413,7 @@
             </section>
         </section> <!-- End of Deal -->
 
-        <section class="container-fluid" id="comments">
-            <!-- <section class="container"> -->
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-                <div class="swiper text-center m-5">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide single-testimonial-slider">
-                            <img src="avatar1.png" alt="">
-                            <h4>Saira Hakim</h4>
-                            <p>Local Shop Owner</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint!</p>
-                        </div>
-
-                        <div class="swiper-slide single-testimonial-slider">
-                            <img src="avatar2.png" alt="">
-                            <h4>Saira Hakim</h4>
-                            <p>Local Shop Owner</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint!</p>
-                        </div>
-
-                        <div class="swiper-slide single-testimonial-slider">
-                            <img src="avatar3.png" alt="">
-                            <h4>Saira Hakim</h4>
-                            <p>Local Shop Owner</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit sint!</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-                <script>
-                    new Swiper('.swiper', {
-                        loop: true,
-                        autoplay: {
-                            delay: 3000,
-                        }
-                    });
-                </script>
-            <!-- </section> -->
-        </section> <!-- End of comments -->
 
         <section class="container-fluid p-0" id="year">
             <section class="container">
@@ -546,6 +499,7 @@
         </section> <!-- End of News -->
 
         <section class="container-fluid py-5" id="logo">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
             <section class="container">
 
                 <div class="swiper text-center">
@@ -570,6 +524,7 @@
                         <div class="swiper-slide">
                             <img src="5.png" class="img-fluid" alt="">
                         </div>
+                        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
                     </div>
                 </div>
@@ -630,7 +585,24 @@
                 </div>
             </section>
         </section> <!-- End of footer -->
+        <button id="topBtn" class="btn btn-warning position-fixed bottom-0 end-0 m-5 p-3 fs-1 d-none">
+            ↑
+        </button>
+        <script>
+            let btn = document.getElementById("topBtn");
 
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    btn.classList.remove("d-none");
+                } else {
+                    btn.classList.add("d-none");
+                }
+            });
+
+            btn.onclick = function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+        </script>
     </section> <!-- End of mainwrapper -->
     <script>
         new Swiper('.swiper', {

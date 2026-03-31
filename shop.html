@@ -500,7 +500,24 @@
                 </div>
             </section>
         </section> <!-- End of footer -->
+        <button id="topBtn" class="btn btn-warning position-fixed bottom-0 end-0 m-5 p-3 fs-1 d-none">
+            ↑
+        </button>
+        <script>
+            let btn = document.getElementById("topBtn");
 
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    btn.classList.remove("d-none");
+                } else {
+                    btn.classList.add("d-none");
+                }
+            });
+
+            btn.onclick = function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+        </script>
     </section> <!-- End of mainwrapper -->
     <script>
         new Swiper('.swiper', {
